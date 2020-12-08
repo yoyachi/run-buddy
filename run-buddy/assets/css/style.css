@@ -1,0 +1,60 @@
+/*-with (*) element we tell every element in the page to not have any margin or border unless we tell it to.-*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-To affect style in whole body, it needs to be written at the parent "body"-*/
+body {
+    
+    color: #39a6b2;
+    font-family:  Helvetica, Arial,  sans-serif;
+    padding: 20px;
+   
+}
+
+/*-Applying style to <header>-*/
+header {
+padding: 20px 35px;
+background-color: #39a6b2;
+}
+/*-when we want to style "h1 inside header":-*/
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline
+
+}
+/*-Specify "text-decoration: none;" for anchors to eliminate underline blue text by default*/
+header a{
+    text-decoration: none;
+    color: #fce138;
+}
+/*-The flow property moves an element with its parent by width default, known in CSS as "BLOCK ELEMENT".-*/
+/*-"Display: inline;" will wrap the  -*/
+header nav {
+    float: right;
+    margin: 7px 0;
+}   
+/*-<li> element is a block element, by default, it will force the block element  to be in the next line after the other when "Display-inline" element -*/
+header nav ul li {
+    display: inline;
+}
+
+/*-<h1> to <h6> has some default styling such as making them bold and adding padding around to make them look like headings before CSS. To remove them place * {margin: 0; padding: 0;} at the top of style sheet. * is called "universal selector" in CSS.-*/
+header nav ul li a {
+margin: 0 30px;
+font-weight: lighter;
+font-size: 22px;
+}
+
+
+
+
+
+
+
+
