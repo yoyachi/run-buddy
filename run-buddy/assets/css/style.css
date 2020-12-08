@@ -1,8 +1,10 @@
-/*-with (*) element we tell every element in the page to not have any margin or border unless we tell it to.-*/
+/*-with (*) element we tell every element in the page to not have any margin or border unless we tell it to.
+"box-sizing: border-box;" will fix the border and padding missed on "content-size" by default-*/
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*-To affect style in whole body, it needs to be written at the parent "body"-*/
@@ -10,7 +12,7 @@ body {
     
     color: #39a6b2;
     font-family:  Helvetica, Arial,  sans-serif;
-    padding: 20px;
+    padding: 0;
    
 }
 
@@ -51,10 +53,28 @@ font-weight: lighter;
 font-size: 22px;
 }
 
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
 
 
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+/*-line-height: 1.5; means we want 1.5 times the size of the font and make it more readable.-*/
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
 
-
-
+footer a {
+    color:  #024e76;
+}
 
 
