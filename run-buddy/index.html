@@ -35,8 +35,44 @@
 
     <!--hero/jumbotron-->
     <section>
+        <div>
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of your trainers will schedule a consul.</p>
+            <!-- Add form element / A sign-up form is a " call to action " or "CTA"-->
+            <form>
+                <label for="name:">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name"/>
+                <label for="email">Enter email Address:</label>
+                <input type="text" placeholder="Email Address" name="email" id="email"/>
+                <label for="phone">Enter a telephone number:</label>
+                <input type="text" placeholder="Phone Number" name="phone" id="phone"/>
+                <!--Adding radio button layout / because radio are default inline, they will go horizontally one after the other from left to right-->
+                <p>
+                    Have you worked out with a trainer before?
+                    <input type="radio" name= "trainer-confirm" id= "trainer-yes" />
+                    <label for="trainer-yes">Yes</label>
+                    <input type="radio" name= "trainer-confirm" id= "trainer-no" />
+                    <label for="trainer-no">No</label>
+                   
+                </p>
+                <p>
+                    <label for="check-box">
+                        I acknowledge that I am at least 18 years of age.
+                    </label>
+                    <input type="checkbox" name="age-confirm" id="check-box"/>
+                </p>
+
+                <button type="submit">
+                    Get running
+                </button>
+               
+
+            </form>
+        
+        </div>
 
     </section>
+    <!-- end hero -->
 
     <!--"What we do" section-->
     <section>
@@ -61,6 +97,13 @@
     <!--footer-->
     <footer>
         <h2>❤️ Made with love by Run Buddy</h2>
+
+    <!--use <br/> to break a line in between / # refers to as placeholder for a privacy policy page that doesn't exist but is coming over.-->  
+    <div>
+        <a href="#">Read Our Privacy Policy</a><br/> 
+        &copy; 2019 Run Buddy, Inc.
+    </div>
+
     </footer>
 </body>
 </html>
